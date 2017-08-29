@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="iuem20.portfolio">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="iuem20.portfolio.interfaces.IIuem20PortfolioLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="iuem20.portfolio"
+      type="plone"
+      directory="static"
+      />
+
+   <browser:page
+      name="dataset-portfolio"
+      for="*"
+      class=".dataset.createDataSet"
+      permission="cmf.ManagePortal"
+      />
+
+</configure>

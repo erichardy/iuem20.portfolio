@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-25 09:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: iuem20.portfolio\n"
+
+#: ./portfolio.py:117
+msgid "Add a new portfolio !"
+msgstr "Créer un nouveau portfolio"
+
+#: ./interfaces.py:65
+msgid "CSS class for background"
+msgstr "Classe CSS pour le fond"
+
+#: ./portfolio.py:147
+msgid "Cancel this portfolio"
+msgstr "Abandonner la création de ce portfolio"
+
+#: ./profiles/default/types/iuem20.portfolio.xml
+msgid "Edit"
+msgstr "Modifier"
+
+#: ./configure.zcml:25
+msgid "Installs the iuem20.portfolio add-on."
+msgstr ""
+
+#: ./portfolio.py:134
+msgid "Please correct errors"
+msgstr "Merci de corriger les erreurs"
+
+#: ./profiles/default/types/iuem20.portfolio.xml
+msgid "Portfolio"
+msgstr ""
+
+#: ./portfolio.py:129
+msgid "Save this portfolio"
+msgstr "Enregistrer ce portfolio"
+
+#: ./configure.zcml:34
+msgid "Uninstalls the iuem20.portfolio add-on."
+msgstr ""
+
+#: ./interfaces.py:46
+msgid "authors pictures"
+msgstr "Auteurs des images"
+
+#: ./interfaces.py:61
+msgid "configuration"
+msgstr "Configuration"
+
+#. Default: "View"
+#: ./profiles/default/types/iuem20.portfolio.xml
+msgid "description"
+msgstr "Description"
+
+#: ./interfaces.py:47
+msgid "folder of authors pictures, images only !"
+msgstr "ID du dossier qui contient les images (seules les images contenues sont prises en compte)."
+
+#: ./interfaces.py:23
+msgid "general"
+msgstr "Général"
+
+#: ./configure.zcml:25
+msgid "iuem20.portfolio"
+msgstr ""
+
+#: ./configure.zcml:34
+msgid "iuem20.portfolio (uninstall)"
+msgstr ""
+
+#: ./interfaces.py:34
+msgid "main photo"
+msgstr "Photo principale"
+
+#: ./interfaces.py:56
+msgid "main presentation"
+msgstr "Présentation principale"
+
+#: ./interfaces.py:38
+msgid "picture author"
+msgstr "Auteur de la photo"
+
+#: ./profiles/default/types/iuem20.portfolio.xml
+msgid "portfolio"
+msgstr "Portfolio"
+
+#: ./interfaces.py:31
+msgid "portfolio title"
+msgstr "Titre du portfolio"
+
+#: ./interfaces.py:53
+msgid "presentation"
+msgstr "Présentation"
+
+#: ./interfaces.py:42
+msgid "small photo"
+msgstr "Vignette"

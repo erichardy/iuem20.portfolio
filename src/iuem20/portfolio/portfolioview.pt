@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plonetheme.iuem20">
+
+<body
+    tal:define="portal_state context/@@plone_portal_state;
+	            portal_url portal_state/portal_url">
+
+<metal:content-core fill-slot="main">
+  <metal:content-core define-macro="main">
+  <div tal:define="imgAuthor python:context.getImgAuthor();
+                   images python:context.getPortfolioImages();
+                   authors python:context.getPortfolioAuthors();
+                   bg python:context.getPorfolioBG()"
+       tal:attributes="class string:${bg} iuem20-portfolio">
+   
+	<section>
+	  <div class="portfolio-fullimg"
+	       tal:define="image nocall:context/image">
+	    <img tal:attributes="src string:${context/absolute_url}/@@download/image/${image/filename}"
+	         class="full-width img-responsive"
+             tal:on-error="string: No image for this folder !" />
+	  </div>
+	  	<!---- auteur de la photo  --------->
+	    <div class="img-author hidden-xs"
+	         tal:condition="python:imgAuthor"
+	         tal:content="string:${imgAuthor}">
+	    </div>
+		<div class="img-no-author hidden-xs"
+	         tal:condition="python:not imgAuthor">
+	    </div>
+	  
+		  <div class="thumbnail-wrapper"
+		       tal:condition="authors">
+	          <span tal:omit-tag="" tal:repeat="author authors">
+	            <div class="thumbnail-portrait">
+	              <span class="author text-center">
+	                  <p><img src=""
+	                       tal:attributes="src string:${author/absolute_url}"
+	                       class="img-circle portrait-portfolio"/>
+	                  </p>
+	                  <h3 tal:content="string:${author/title}"
+	                        class="grey">title</h3>
+	              </span>
+	            </div>
+	          </span>
+		  </div> <!-- authors -->
+
+		 <div class="super grey text-center">
+		   <span>${context/title}</span>
+		 </div>
+		 <section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
+	     <div tal:define="doc python:context.getPorfolioText()"
+	          tal:condition="doc"
+	          class="text-justify grey col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-1">
+	       <span tal:content="structure string:${doc}">doc</span>
+	     </div>
+	     <div tal:condition="images">
+		     <span tal:omit-tag="" tal:repeat="image images">
+		       <img src=""
+		            tal:attributes="src python:context.getImageSRC(image)"
+		            class="images-portfolio img-responsive" />
+		       <div class="portfolio-caption col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
+		         <span tal:content="string:${image/description}">image description</span>
+		       </div>
+		     </span>
+	     </div>
+
+	</section>
+
+  </div>
+  </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+  

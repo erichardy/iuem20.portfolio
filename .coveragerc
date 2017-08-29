@@ -1,0 +1,6 @@
+[report]
+include =
+    src/iuem20/*
+omit =
+    */test*
+    */upgrades/*

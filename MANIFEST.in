@@ -1,0 +1,4 @@
+graft src/iuem20
+graft docs
+include *.rst
+global-exclude *.pyc

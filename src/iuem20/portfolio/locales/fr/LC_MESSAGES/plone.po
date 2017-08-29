@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2017-08-25 09:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./portfolio.py:117
+msgid "Add a new portfolio !"
+msgstr ""
+
+#: ./interfaces.py:65
+msgid "CSS class for background"
+msgstr ""
+
+#: ./portfolio.py:147
+msgid "Cancel this portfolio"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Create data set portfolio"
+msgstr ""
+
+#: ./portfolio.py:134
+msgid "Please correct errors"
+msgstr ""
+
+#: ./portfolio.py:129
+msgid "Save this portfolio"
+msgstr ""
+
+#: ./interfaces.py:46
+msgid "authors pictures"
+msgstr ""
+
+#: ./interfaces.py:61
+msgid "configuration"
+msgstr ""
+
+#: ./interfaces.py:47
+msgid "folder of authors pictures, images only !"
+msgstr ""
+
+#: ./interfaces.py:23
+msgid "general"
+msgstr ""
+
+#: ./interfaces.py:34
+msgid "main photo"
+msgstr ""
+
+#: ./interfaces.py:56
+msgid "main presentation"
+msgstr ""
+
+#: ./interfaces.py:38
+msgid "picture author"
+msgstr ""
+
+#: ./interfaces.py:31
+msgid "portfolio title"
+msgstr ""
+
+#: ./interfaces.py:53
+msgid "presentation"
+msgstr ""
+
+#: ./interfaces.py:42
+msgid "small photo"
+msgstr ""
