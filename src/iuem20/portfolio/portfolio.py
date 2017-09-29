@@ -104,7 +104,7 @@ class portfolio(Container):
 
     def getPorfolioText(self):
         try:
-            return self.presentation.raw
+            return self.presentation.output
         except Exception:
             return False
 
