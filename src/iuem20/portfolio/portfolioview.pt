@@ -53,14 +53,12 @@
 		 <div class="super grey text-center">
 		   <span>${context/title}</span>
 		 </div>
-         <div class="full-width row">
-           <div class="col-xs-12 col-md-10 col-md-offset-1">
+         <div class="portfolio-text">
        		<section id="viewlet-alt-languages" tal:content="structure provider:alt-languages" />
-           </div>
          </div>
 	     <div tal:define="doc python:context.getPorfolioText()"
 	          tal:condition="doc"
-	          class="text-justify grey col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-1">
+	          class="text-justify grey portfolio-text">
 	       <span tal:content="structure string:${doc}">doc</span>
 	     </div>
 	     <div tal:condition="images">
