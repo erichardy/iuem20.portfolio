@@ -25,6 +25,7 @@
 	         class="full-width img-responsive"
              tal:on-error="string: No image for this folder !" />
 	  </div>
+	    <div class="iuem20-std-text">
 	  	<!---- auteur de la photo  --------->
 	    <div class="img-author hidden-xs"
 	         tal:condition="python:imgAuthor"
@@ -71,7 +72,7 @@
 		       </div>
 		     </span>
 	     </div>
-
+      </div>
 	</section>
 
   </div>
