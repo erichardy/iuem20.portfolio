@@ -75,12 +75,8 @@ class portfolio(Container):
                                   path='/'.join(self.getPhysicalPath()),
                                   depth=1,
                                   )
-        bimages = api.content.find(portal_type='Image',
-                                   path='/'.join(self.getPhysicalPath()),
-                                   depth=1,
-                                   )
         # import pdb;pdb.set_trace()
-        founds = images + bimages
+        founds = images
         if len(founds) == 0:
             return False
         objs = [i.getObject() for i in founds if isPublished(i)]
